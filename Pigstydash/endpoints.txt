@@ -1,0 +1,21 @@
+Method    URL pattern     Handler                    Action
+
+GET      /                  home                        displays the login
+GET      /about             about                       displays the about page
+GET      /signup            signupShow                  display the login page
+POST     /signup            signupSubmit                saves the login information
+GET      /singup/success    signupSuccessShow           displays a singup successfully
+
+GET      /room              viewRoomShow                displays the rooms that are available 
+GET      /room/create       roomCreateShow              displays a form with for user to create a new room with new fields
+POST     /room/create       roomCreateSubmit            saves the room with its fields into the database
+ 
+GET      /pigsty            viewRoomShow                displays the pigsty that are available in the room
+GET      /pigsty/create     pigstyCreateShow            displays a form with for user to create a new pigsty
+POST     /pigsty/create     pigstyCreateSubmit          saves the pigsty with its fields into the database
+
+GET      /pigs              viewRoomShow                displays the pigs that are available in the pigsty
+GET      /pigs/create       pigstyCreateShow            displays a form with for user to create a new pig 
+POST     /pigs/create       pigstyCreateSubmit          saves the pigs with its fields into the database
+
+

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #f0f3fd;
+    font-family: "Arial";
+}
+
+button{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+td {
+    width: 20px;
+}
+
+#pagination{
+    text-decoration: none;
+}
+.pig{
+    width: 10mm;
+}
+.pen{
+    background-color: #d5dfff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.container{
+    transition: margin-left .5s;
+    padding: 35px;
+    padding-right: 5px;
+}
+
+.sidebar{
+    position: fixed;
+    overflow: auto;
+    opacity: 0.99;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 100%;
+    background: #3949ab;
+    transition: all 0.4s;
+}
+
+body.open .sidebar{
+    width: 240px;
+}
+
+.sidebar-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    height: 68px;
+    padding: 0 1.25rem 0 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+
+.sidebar-header:hover{
+    border-left: 3px solid #bdbdbd;
+}
+
+.sidebar-burger{
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.sidebar-burger > i, body.open .sidebar-burger > i{
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+}
+
+.sidebar-burger:hover > i, body.open .sidebar-burger:hover > i{
+    color: #bdbdbd;
+}
+
+.sidebar-logo{
+    width: 40mm;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+body.open .sidebar-logo{
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.sidebar-menu{
+    display: grid;
+}
+
+.sidebar-menu > button{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 55px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 22px;
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+
+.sidebar-menu > button:hover{
+    border-left: 3px solid #f9f9f9;
+}
+
+.sidebar-menu > button.has-border{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-bottom: 1rem;
+}
+
+.sidebar-menu > button > i{
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+}
+
+.sidebar-menu > button:hover > i, .sidebar-menu > button:hover > span{
+    color: #bdbdbd;
+}
+
+.sidebar-menu > button > span{
+    color: #f9f9f9;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+body.open .sidebar-menu > button > span{
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#gray {
+    color: gray;
+}
+
+#space {
+    letter-spacing: 13px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .lightGallery .image-tile, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-0
+{
+  margin-bottom: 0 !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.ml-2{
+  margin-left: 0.5rem !important;
+}
+
+.card{
+    height: auto;
+}
+
+.card.card-dark-blue {
+    background: #4747A1;
+    color: #ffffff;
+}
+  
+.card.card-dark-blue:hover {
+    background: #5050b2;
+}
+
+.card .card-body {
+    padding: 1.25rem 1.25rem;
+}
+  
+.card .card-body + .card-body {
+    padding-top: 1rem;
+}
+  
+.fs-30 {
+    font-size: 30px;
+}
+
+  .row1{
+    padding: 10px;
+}
+
+.card-child{
+    width:50%;
+}
+
+.card-people {
+    position: relative;
+    padding-top: 20px;
+}
+  
+.card-people img {
+    border-radius: 20px;
+    width: 40%;
+}
+  
+.card-people .weather-info {
+    position: absolute;
+    top: 30px;
+    right: 24px;
+}
+  
+.card-people .weather-info sup {
+    font-size: 18px;
+}
+  
+.card-people .weather-info .location {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+  
+.weather-info {
+    position: absolute;
+    top: 30px;
+    right: 24px;
+}
+  
+.weather-info sup {
+    font-size: 18px;
+}
+  
+.weather-info .location {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.mt-auto {
+  margin-top: auto !important;
+}
+
+.d-flex{
+    display: flex !important;
+    padding-bottom: 3px;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.stretch-card{
+    padding: 10px;
+}
+
+.pigicon {
+    padding-left: 5px;
+    width: 4%;
+}
+
+.pigsties{
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.piginpigsty {
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    width:30%;
+
+}

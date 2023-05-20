@@ -1,0 +1,52 @@
+
+//Install gorilla server
+go get -u github.com/gorilla/mux
+
+//Install MangoDBDrivers
+go get go.mongodb.org/mongo-driver/mongo
+
+//Setup atlas mongodb account
+//setup connection
+
+//Get your mongo-driver module to connect to the database
+mongodb+srv://pigsty:<password>@cluster0.yf0s3uc.mongodb.net/?retryWrites=true&w=majority
+
+//download "Thunder Client" Visual studio Extension. 
+//Start the server
+//Create a New Request
+//Type the localhost route and locate "body" to type and enter json script to enter data into database.
+
+//here are some insertions you can do
+
+
+//Method: Post
+//http://localhost:4000/api/room
+//jsone file:
+{
+  "room": "ThirdRoom",
+  "pigstynum": 7,
+  "temperature": "74f",
+  "humidity": "42c"
+}
+
+//Method: Post
+//http://localhost:4000/api/pig
+//jsone file:
+//for pigs
+{
+  "breed": "Duroc",
+  "dob": "Feb/10/2023",
+  "vaccine": "yes",
+  "health": "healthy"
+}
+
+//Method: Post
+//http://localhost:4000/api/pigsty
+//jsone file:
+//for pigsty
+{
+  "pigstytype": "Type room 1",
+  "waterbin": 2,
+  "feedbin": 2,
+  "room": 1
+}

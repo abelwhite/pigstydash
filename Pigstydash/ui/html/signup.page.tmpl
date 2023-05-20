@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/img/Logos/tabicon.png">
+    <link rel="icon" type="image/png" href="/static/img/pigicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    
+    <div class="login-card">
+        <img src="/static/img/logo1.png" alt ="LOGO">
+        <h2>Sign Up</h2>
+        <h3>Enter your credentials</h3>
+
+        <form action="/signup" method="POST" class="login-form">
+            <input type="hidden" name="csrf_token" value="{{.CSRFToken}}"/> <!--noSurf will check the form and get the value with the one created-->
+
+            {{with .Flash}}
+            <div class = "flash"> {{.}}</div>
+            {{end}}
+
+            {{ with .ErrorsFromForm.email }}
+            <label class="error">{{ . }}</label>
+            {{end}}
+            <input type="text" placeholder="Email" name="email" value="{{ .FormData.Get "email" }}">
+            
+            {{ with .ErrorsFromForm.name }}
+            <label class="error">{{ . }}</label>
+            {{end}}
+            <input type="text" placeholder="Username" name="name" value="{{ .FormData.Get "name" }}">
+            
+
+            {{ with .ErrorsFromForm.password }}
+            <label class="error">{{ . }}</label>
+            {{end}}
+            <input type="password" placeholder="Password" name="password" value="{{ .FormData.Get "password" }}">
+
+            {{ with .ErrorsFromForm.confirmpassword }}
+            <label class="error">{{ . }}</label>
+            {{end}}
+            <input type="password" placeholder="Confirm Password" name="confirmpassword" value="{{ .FormData.Get "confirmpassword" }}">
+            <a href="/login">Already a user? Log In </a>
+            <button type="submit">SIGNUP</button>
+        </form>
+    </div>
+</body>
+</html>
