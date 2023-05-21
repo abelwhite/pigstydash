@@ -1,4 +1,9 @@
-// Filename: internal/models/pigs.go
+// Filename: internal/models/pigsty.go
+//this file contains all our data and sql we need for pigsty
+
+//Written by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalez
+//Tested by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalez
+//Debbuged by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalezpackage models
 package models
 
 import (

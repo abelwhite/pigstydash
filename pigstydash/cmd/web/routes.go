@@ -1,4 +1,9 @@
-// Filename: cmd/web/routes.go
+// Filename: cmd/web/routes.go 
+//This files contains the routes to all our end points
+
+//Written by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalez
+//Tested by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalez
+//Debbuged by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalez
 package main
 
 import (

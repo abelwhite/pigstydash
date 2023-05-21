@@ -1,4 +1,9 @@
 // Filename: internal/models/users.go
+//this file contains all our data and sql we need for rooms
+
+// Written by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalez
+// Tested by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalez
+// Debbuged by: Abel Blanco, Jovan Alpuche, Lianni Mathews, Cameron Tillet, Talib Marin, Amir Gonzalezpackage models
 package models
 
 import (
