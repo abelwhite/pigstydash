@@ -46,11 +46,11 @@ This directory contains files for the final demo.
 
     g. You can now signup new user credentials to be authenticated into the app.
 
-2. Report 1 and 2 are submitted as pdf within the folder directory.
+2. Links for Report 1 and 2 are submmited within the folder directory "report 1 & 2".
 
-3. PowerPoint Slides are also submitted within the direcotry.
+3. Lik to PowerPoint Slides are also submitted within the direcotry.
 
-4. Report 3 is also submitted as pdf within the folder directory. 
+4. Link to Report 3 is also submitted as pdf within the folder directory. 
 
 5. Complete source code is located in directory called "pigstydash"
 
